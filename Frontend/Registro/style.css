@@ -1,0 +1,112 @@
+:root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --accent: #2563eb;
+      --text: #0f172a;
+      --muted: #64748b;
+      --error: #b91c1c;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, var(--bg), #ffffff);
+      color: var(--text);
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      padding: 32px;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    p.lead {
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    label {
+      font-size: 13px;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #e6edf3;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 4px 14px rgba(37,99,235,0.12);
+    }
+
+    .error {
+      color: var(--error);
+      font-size: 13px;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    button:active {
+      transform: translateY(1px);
+    }
+
+    .small {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    .small a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .small a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 420px) {
+      .card { padding: 20px; }
+    }

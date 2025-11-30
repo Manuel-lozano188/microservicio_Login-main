@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <main class="container">
+    <section class="card" aria-labelledby="login-heading">
+      <h1 id="login-heading">Iniciar sesión</h1>
+      <p class="lead">Introduce tu correo y contraseña para continuar.</p>
+
+      <form id="login-form" novalidate>
+        <div>
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@ejemplo.com" />
+          <div id="email-error" class="error" aria-live="polite"></div>
+        </div>
+
+        <div>
+          <label for="password">Contraseña</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="••••••••" />
+          <div id="password-error" class="error" aria-live="polite"></div>
+        </div>
+
+        <div class="actions">
+          <span class="small">¿Olvidaste tu contraseña?</span>
+          <button type="submit">Entrar</button>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:5500/Frontend/Registro/registro.html">No tienes una cuenta? Regístrate</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
